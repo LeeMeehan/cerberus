@@ -47,3 +47,41 @@
     position: fixed;
     padding: .54em 0;
 }
+
+/* Cards */
+
+
+/* Adjust alignment for the cards within the Continue Watching section */
+.layout-desktop #homeTab .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
+	margin-top: 0em;
+}
+
+.layout-desktop #homeTab .sectionTitle.sectionTitle-cards {
+	font-size: 1em;
+	font-family: inherit;
+	text-transform: uppercase;
+	font-weight: 600 !important;
+}
+
+.layout-desktop [dir="ltr"] .padded-left {
+	padding-left: max(env(safe-area-inset-left), 3.3%);
+	padding-right: max(env(safe-area-inset-left), 3.3%);
+}
+
+/* Apply progress bar gradient */
+.itemProgressBarForeground {
+	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+
+.layout-desktop .itemProgressBar {
+	background: #000;
+	height: 0.4em;
+	position: relative;
+
+}
+
+.playbackProgress {
+	color: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
+	background-color: #000 !important;
+	z-index: 1000;
+}
