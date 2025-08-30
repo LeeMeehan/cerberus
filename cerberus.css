@@ -48,6 +48,10 @@
     padding: .54em 0;
 }
 
+.pageTitleWithDefaultLogo {
+	background-image: url(https://github.com/LeeMeehan/cerberus/blob/master/cerberus_logo.png);
+}
+
 /* Cards */
 
 
