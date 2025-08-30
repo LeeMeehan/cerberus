@@ -1,4 +1,6 @@
+/** ### External Imports - START ###**/
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/** ### External Imports - END ###**/
 
 /* cerberus.css */
 :root {
@@ -7,7 +9,6 @@
   --cerberus-primary: #dc0000;
 }
 
-/* Make sure the background container can host a pseudo-element */
 .backgroundContainer {
   position: relative;
   background-color: var(--cerberus-bg) !important;
@@ -32,7 +33,7 @@
   pointer-events: none;
 }
 
-/* Headers */
+/* ### Headers - START ### */
 .skinHeader{
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 6.25%, rgba(0, 0, 0, 0.83) 12.5%, rgba(0, 0, 0, 0.82) 18.75%, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0.77) 31.25%, rgba(0, 0, 0, 0.73) 37.5%, rgba(0, 0, 0, 0.69) 43.75%, rgba(0, 0, 0, 0.64) 50%, rgba(0, 0, 0, 0.58) 56.25%, rgba(0, 0, 0, 0.52) 62.5%, rgba(0, 0, 0, 0.45) 68.75%, rgba(0, 0, 0, 0.37) 75%, rgba(0, 0, 0, 0.29) 81.25%, rgba(0, 0, 0, 0.2) 87.5%, rgba(0, 0, 0, 0.1) 93.75%, rgba(0, 0, 0, 0) 100%);
 	position: absolute;
@@ -42,37 +43,37 @@
 	background: transparent;
 }
 
-.sectionTabs {
-    display: none;
-    position: fixed;
-    padding: .54em 0;
-}
-
 .pageTitleWithDefaultLogo {
-	background-image: url(https://github.com/LeeMeehan/cerberus/blob/master/cerberus_logo.png);
+	background-image: url(https://cdn.jsdelivr.net/gh/LeeMeehan/cerberus@master/cerberus_banner.png);
 }
 
-/* Cards */
+/* ### Headers - END ### */
 
+/* ### Cards - START ### */
 
-/* Adjust alignment for the cards within the Continue Watching section */
-.layout-desktop #homeTab .section1.verticalSection .itemsContainer .card.overflowBackdropCard {
-	margin-top: 0em;
+/* My Media Cards */
+.layout-desktop #indexPage .verticalSection.section0 .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+	width: 23.4em;
 }
 
-.layout-desktop #homeTab .sectionTitle.sectionTitle-cards {
-	font-size: 1em;
-	font-family: inherit;
-	text-transform: uppercase;
-	font-weight: 600 !important;
+.verticalSection.section0 .textActionButton {
+	display: none;
 }
 
-.layout-desktop [dir="ltr"] .padded-left {
-	padding-left: max(env(safe-area-inset-left), 3.3%);
-	padding-right: max(env(safe-area-inset-left), 3.3%);
+/* Continue Watching & NextUp Cards */
+.layout-desktop #indexPage .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.card.overflowSquareCard.card-hoverable {
+	width: 15.6em;
 }
 
-/* Apply progress bar gradient */
+/*Vertical card size on homeTab */
+.layout-desktop #homeTab .card.overflowPortraitCard.card-hoverable.card-withuserdata {
+	width: 15.6em;
+}
+
+/* ### Cards - END ### */
+
+/* ### Progress Bar - START ### */
 .itemProgressBarForeground {
 	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
 }
@@ -89,3 +90,5 @@
 	background-color: #000 !important;
 	z-index: 1000;
 }
+
+/* ### Progress Bar - END ### */
