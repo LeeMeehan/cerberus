@@ -73,6 +73,14 @@
 
 /* ### Cards - END ### */
 
+/* ### Buttons - START ### */
+
+.buttonActive {
+	color: var(--cerberus-primary) !important;
+}
+
+/* ### Buttons - END ### */
+
 /* ### Progress Bar - START ### */
 .itemProgressBarForeground {
 	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
@@ -92,3 +100,26 @@
 }
 
 /* ### Progress Bar - END ### */
+
+/* ### Indicators - START ### */
+
+.indicator {
+  background: var(--cerberus-primary) !important;
+}
+
+/* ### Indicators - END ### */
+
+
+
+/* Adjust both "size-adjust" and "size" to modify size */
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+}
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.emby-tab-button {
+  padding: 1.75em 1.7em;
+}
